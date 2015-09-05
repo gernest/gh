@@ -12,6 +12,9 @@
         {{with .Sections.blog}}
         {{range $k,$v:=.}}
         <div class="markdown-body">
+		<h1>
+		 {{$v.Data.title}}
+		</h1>
             {{$v.HTML}}
         </div>
         {{end}}
